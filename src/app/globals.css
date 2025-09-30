@@ -1,26 +1,182 @@
 @import "tailwindcss";
 
+/* Base theme variables */
 :root {
   --background: #ffffff;
   --foreground: #171717;
 }
 
+/* Tailwind theme integration */
 @theme inline {
+  /* Colors */
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
+
+  /* GreenHatch brand colors */
+  --color-greenhatch-50: #E6F6EA;
+  --color-greenhatch-100: #CFF0D5;
+  --color-greenhatch-300: #7ED79D;
+  --color-greenhatch-400: #4CAF50;
+  --color-greenhatch-500: #0F9D58; /* primary */
+  --color-greenhatch-600: #0D8A4F;
+  --color-greenhatch-700: #0B7A43; /* dark */
+  --color-greenhatch-900: #064A28;
+  --color-accent: #FFD166;
+
+  /* Fonts (hooked to next/font variables in layout.tsx) */
+  --font-sans: var(--font-inter);
+  --font-display: var(--font-playfair);
   --font-mono: var(--font-geist-mono);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+/* Dark mode overrides */
+.dark {
+  --background: #0a0a0a;
+  --foreground: #ededed;
+
+  /* Dark mode green adjustments */
+  --color-greenhatch-400: #16c47f;
+  --color-greenhatch-500: #16c47f;
+  --color-greenhatch-700: #0f9d58;
 }
 
+/* Global body styles */
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-sans), Arial, Helvetica, sans-serif;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Custom Animations */
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 0.4;
+  }
+  50% {
+    opacity: 0.8;
+  }
+}
+
+/* Animation Classes */
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+.animate-float-delay {
+  animation: float 6s ease-in-out infinite;
+  animation-delay: 2s;
+}
+
+.animate-float-slow {
+  animation: float 8s ease-in-out infinite;
+  animation-delay: 4s;
+}
+
+.animate-slideDown {
+  animation: slideDown 0.3s ease-out;
+}
+
+.animate-fadeInUp {
+  animation: fadeInUp 0.6s ease-out;
+}
+
+.animate-pulse-slow {
+  animation: pulse 3s ease-in-out infinite;
+}
+
+/* Smooth scroll behavior */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom scrollbar for webkit browsers */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-greenhatch-50);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-greenhatch-500);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-greenhatch-700);
+}
+
+.dark ::-webkit-scrollbar-track {
+  background: #1f2937; /* darker gray for dark mode */
+}
+
+.dark ::-webkit-scrollbar-thumb {
+  background: var(--color-greenhatch-500);
+}
+
+/* Focus styles for accessibility */
+:focus-visible {
+  outline: 2px solid var(--color-greenhatch-500);
+  outline-offset: 2px;
+}
+
+/* Button hover effects */
+.btn-hover-effect {
+  transition: all 0.3s ease;
+}
+
+.btn-hover-effect:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(15, 157, 88, 0.2);
+}
+
+/* Loading spinner */
+.spinner {
+  border: 2px solid var(--color-greenhatch-100);
+  border-top: 2px solid var(--color-greenhatch-500);
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Ensure mobile menu items are visible in dark mode */
+.mobile-menu-link {
+  @apply text-gray-700 dark:text-gray-300;
 }

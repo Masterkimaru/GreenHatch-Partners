@@ -24,18 +24,26 @@ type Service = {
 
 const SERVICES: Service[] = [
   {
-    id: "strategy",
-    title: "Business Strategy & Advisory",
-    description:
-      "We develop robust strategies for growth, sustainability and competitive advantage tailored to your goals.",
-    Icon: Briefcase,
-  },
-  {
     id: "financial",
     title: "Financial Consulting",
     description:
       "Financial planning, investment guidance, project & business funding support, and risk management strategies.",
     Icon: BarChart2,
+  },
+
+  {
+    id: "solar",
+    title: "Green Energy & Sustainable Energy Solutions",
+    description:
+      "Feasibility studies, developer representation, and recommendations for engineers & contractors on renewables projects.",
+    Icon: Zap,
+  },
+    {
+    id: "mining",
+    title: "Mineral Mining & Exportation Consulting",
+    description:
+      "Advisory on mining operations, compliance, environmental & social safeguards and international export logistics.",
+    Icon: Archive,
   },
   {
     id: "market",
@@ -44,26 +52,21 @@ const SERVICES: Service[] = [
       "Data-driven market intelligence and consumer insights to inform product, pricing and go-to-market decisions.",
     Icon: Search,
   },
-  {
-    id: "solar",
-    title: "Solar Energy (EPC Support)",
-    description:
-      "Feasibility studies, developer representation, and recommendations for engineers & contractors on renewables projects.",
-    Icon: Zap,
-  },
-  {
-    id: "mining",
-    title: "Mineral Mining & Exportation Consulting",
-    description:
-      "Advisory on mining operations, compliance, environmental & social safeguards and international export logistics.",
-    Icon: Archive,
-  },
+
+
   {
     id: "freight",
     title: "Freight & Forwarding",
     description:
       "End-to-end logistics, customs clearance coordination and freight forwarding solutions for global trade.",
     Icon: Truck,
+  },
+  {
+    id: "strategy",
+    title: "Business Strategy & Advisory",
+    description:
+      "We develop robust strategies for growth, sustainability and competitive advantage tailored to your goals.",
+    Icon: Briefcase,
   },
   {
     id: "insurance",
@@ -104,7 +107,7 @@ export default function ServicesPage() {
   }, []);
 
   return (
-    <div className="relative py-20 px-6 bg-greenhatch-50/30 dark:bg-gray-800/10 transition-colors duration-300">
+    <div className="flex-1 flex flex-col items-center justify-center px-6 py-20 bg-gradient-to-b from-greenhatch-50/50 to-background dark:from-gray-900/30 dark:to-background transition-colors duration-300">
       <div className="max-w-6xl mx-auto">
         {/* header */}
         <div

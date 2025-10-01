@@ -95,12 +95,7 @@ export default function RootLayout({
                           +254 734 755 202
                         </a>
                       </p>
-                      <p className="flex items-center gap-2 hover:text-white transition-colors duration-200">
-                        <span>📱</span>
-                        <a href="tel:+254755772635" className="hover:underline">
-                          +254 755 772 635
-                        </a>
-                      </p>
+                      
                       <p className="flex items-center gap-2 hover:text-white transition-colors duration-200">
                         <span>✉️</span>
                         <a

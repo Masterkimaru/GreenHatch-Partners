@@ -15,7 +15,7 @@ export default function ContactPage() {
   const [submitStatus, setSubmitStatus] = useState<{type: 'success' | 'error', message: string} | null>(null);
 
   const phoneNumbers = [
-    { number: '+254 755 772 635', display: '+254 755 772 635' },
+    
     { number: '+254 734 755 202', display: '+254 734 755 202' }
   ];
 
@@ -89,9 +89,14 @@ export default function ContactPage() {
           <h2 className="font-display text-2xl sm:text-3xl font-semibold text-greenhatch-600 dark:text-greenhatch-400 mb-6">
             Call or Message Us Directly
           </h2>
-          <div className="grid md:grid-cols-2 gap-6">
+          <div className="grid md:grid-cols-2 gap-6 justify-items-center md:justify-items-stretch">
             {phoneNumbers.map((phone, index) => (
-              <div key={index} className="bg-white/50 dark:bg-gray-800/30 p-6 rounded-lg shadow-sm backdrop-blur-sm">
+              <div 
+                key={index} 
+                className={`bg-white/50 dark:bg-gray-800/30 p-6 rounded-lg shadow-sm backdrop-blur-sm ${
+                  phoneNumbers.length === 1 ? 'md:col-span-2 md:max-w-md' : 'w-full'
+                }`}
+              >
                 <p className="text-lg font-medium text-foreground mb-4">{phone.display}</p>
                 <div className="flex justify-center space-x-4">
                   <button

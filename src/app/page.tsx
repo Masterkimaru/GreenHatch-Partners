@@ -42,7 +42,7 @@ export default function Home() {
           <div className="grid md:grid-cols-2 gap-8 mt-8">
             <div>
               <h3 className="font-display text-xl font-semibold text-greenhatch-600 dark:text-greenhatch-400 mb-4">Our Mission</h3>
-              <p className="text-foreground/80">To accelerate the transition to green and inclusive growth across Africa.</p>
+              <p className="text-foreground/80">To accelerate the transition to green and inclusive growth globally.</p>
               
               <h3 className="font-display text-xl font-semibold text-greenhatch-600 dark:text-greenhatch-400 mt-6 mb-4">Our Vision</h3>
               <p className="text-foreground/80">A resilient future where sustainable enterprises thrive.</p>

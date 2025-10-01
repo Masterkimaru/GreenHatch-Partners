@@ -88,27 +88,27 @@ export default function Home() {
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             <div className="bg-white/70 dark:bg-gray-800/50 p-6 rounded-lg border border-greenhatch-100 dark:border-greenhatch-800/30">
               <h3 className="font-display text-lg font-semibold text-greenhatch-600 dark:text-greenhatch-400 mb-3">Deep Local & Global Expertise</h3>
-              <p className="text-foreground/80 text-sm">We bring on-the-ground experience across multiple African markets, combined with international best practices.</p>
+              <p className="text-gray-700 dark:text-gray-300 leading-relaxed text-sm">We bring on-the-ground experience across multiple African markets, combined with international best practices.</p>
             </div>
             
             <div className="bg-white/70 dark:bg-gray-800/50 p-6 rounded-lg border border-greenhatch-100 dark:border-greenhatch-800/30">
               <h3 className="font-display text-lg font-semibold text-greenhatch-600 dark:text-greenhatch-400 mb-3">Sustainability + Profitability</h3>
-              <p className="text-foreground/80 text-sm">We don&apos;t just consult; we design strategies that balance environmental responsibility with commercial success.</p>
+              <p className="text-gray-700 dark:text-gray-300 leading-relaxed text-sm">We don&apos;t just consult; we design strategies that balance environmental responsibility with commercial success.</p>
             </div>
             
             <div className="bg-white/70 dark:bg-gray-800/50 p-6 rounded-lg border border-greenhatch-100 dark:border-greenhatch-800/30">
               <h3 className="font-display text-lg font-semibold text-greenhatch-600 dark:text-greenhatch-400 mb-3">Investor & Partner Network</h3>
-              <p className="text-foreground/80 text-sm">Our strong relationships with impact investors, development finance institutions, and industry leaders open doors for funding and collaboration.</p>
+              <p className="text-gray-700 dark:text-gray-300 leading-relaxed text-sm">Our strong relationships with impact investors, development finance institutions, and industry leaders open doors for funding and collaboration.</p>
             </div>
             
             <div className="bg-white/70 dark:bg-gray-800/50 p-6 rounded-lg border border-greenhatch-100 dark:border-greenhatch-800/30">
               <h3 className="font-display text-lg font-semibold text-greenhatch-600 dark:text-greenhatch-400 mb-3">Hands-On Delivery</h3>
-              <p className="text-foreground/80 text-sm">Beyond strategy, we roll up our sleeves to implement, measure, and optimize real outcomes.</p>
+              <p className="text-gray-700 dark:text-gray-300 leading-relaxed text-sm">Beyond strategy, we roll up our sleeves to implement, measure, and optimize real outcomes.</p>
             </div>
             
             <div className="bg-white/70 dark:bg-gray-800/50 p-6 rounded-lg border border-greenhatch-100 dark:border-greenhatch-800/30 md:col-span-2 lg:col-span-1">
               <h3 className="font-display text-lg font-semibold text-greenhatch-600 dark:text-greenhatch-400 mb-3">Transparent & Ethical Practices</h3>
-              <p className="text-foreground/80 text-sm">Trust and accountability are at the heart of how we work.</p>
+              <p className="text-gray-700 dark:text-gray-300 leading-relaxed text-sm">Trust and accountability are at the heart of how we work.</p>
             </div>
           </div>
         </div>

@@ -56,7 +56,7 @@ export default function AboutPage() {
             </p>
             <div className="bg-greenhatch-50 dark:bg-greenhatch-900/20 p-6 rounded-lg">
               <h3 className="font-semibold text-greenhatch-700 dark:text-greenhatch-400 mb-2">Our Location</h3>
-              <p className="text-foreground/80">
+              <p className="text-gray-700 dark:text-gray-300">
                 📍 Pax Mayfair, Westlands<br />
                 Nairobi, Kenya
               </p>
@@ -81,7 +81,7 @@ export default function AboutPage() {
               <h3 className="font-display text-xl font-bold text-greenhatch-700 dark:text-greenhatch-400 mb-3">
                 Proven Track Record
               </h3>
-              <p className="text-foreground/80 leading-relaxed">
+              <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
                 With 12 years of successful operations, we have consistently delivered exceptional results for our clients across diverse industries and market conditions.
               </p>
             </div>
@@ -94,7 +94,7 @@ export default function AboutPage() {
               <h3 className="font-display text-xl font-bold text-greenhatch-700 dark:text-greenhatch-400 mb-3">
                 Sustainability Focus
               </h3>
-              <p className="text-foreground/80 leading-relaxed">
+              <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
                 We integrate environmental responsibility into every strategy, helping businesses grow while contributing positively to sustainable development goals.
               </p>
             </div>
@@ -107,7 +107,7 @@ export default function AboutPage() {
               <h3 className="font-display text-xl font-bold text-greenhatch-700 dark:text-greenhatch-400 mb-3">
                 Innovation-Driven
               </h3>
-              <p className="text-foreground/80 leading-relaxed">
+              <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
                 Our forward-thinking approach and ability to adapt to dynamic market trends ensures cutting-edge solutions that drive sustainable growth.
               </p>
             </div>

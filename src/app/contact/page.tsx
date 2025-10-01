@@ -137,7 +137,7 @@ export default function ContactPage() {
                 onChange={handleChange}
                 placeholder="First Name"
                 required
-                className="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg bg-white/90 dark:bg-gray-800/70 text-foreground focus:outline-none focus:ring-2 focus:ring-greenhatch-500 transition-all duration-300"
+                className="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg bg-white/90 dark:bg-gray-800/70 text-foreground placeholder-gray-500 dark:placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-greenhatch-500 transition-all duration-300"
               />
               <input
                 type="text"
@@ -146,7 +146,7 @@ export default function ContactPage() {
                 onChange={handleChange}
                 placeholder="Last Name"
                 required
-                className="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg bg-white/90 dark:bg-gray-800/70 text-foreground focus:outline-none focus:ring-2 focus:ring-greenhatch-500 transition-all duration-300"
+                className="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg bg-white/90 dark:bg-gray-800/70 text-foreground placeholder-gray-500 dark:placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-greenhatch-500 transition-all duration-300"
               />
             </div>
             <input
@@ -156,7 +156,7 @@ export default function ContactPage() {
               onChange={handleChange}
               placeholder="Email Address"
               required
-              className="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg bg-white/90 dark:bg-gray-800/70 text-foreground focus:outline-none focus:ring-2 focus:ring-greenhatch-500 transition-all duration-300"
+              className="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg bg-white/90 dark:bg-gray-800/70 text-foreground placeholder-gray-500 dark:placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-greenhatch-500 transition-all duration-300"
             />
             <textarea
               name="message"
@@ -165,7 +165,7 @@ export default function ContactPage() {
               placeholder="Message"
               rows={4}
               required
-              className="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg bg-white/90 dark:bg-gray-800/70 text-foreground focus:outline-none focus:ring-2 focus:ring-greenhatch-500 transition-all duration-300"
+              className="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg bg-white/90 dark:bg-gray-800/70 text-foreground placeholder-gray-500 dark:placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-greenhatch-500 transition-all duration-300"
             ></textarea>
             <button
               type="submit"

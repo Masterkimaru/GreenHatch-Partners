@@ -45,13 +45,7 @@ const SERVICES: Service[] = [
       "Advisory on mining operations, compliance, environmental & social safeguards and international export logistics.",
     Icon: Archive,
   },
-  {
-    id: "market",
-    title: "Market Research & Analysis",
-    description:
-      "Data-driven market intelligence and consumer insights to inform product, pricing and go-to-market decisions.",
-    Icon: Search,
-  },
+  
 
 
   {
@@ -61,13 +55,7 @@ const SERVICES: Service[] = [
       "End-to-end logistics, customs clearance coordination and freight forwarding solutions for global trade.",
     Icon: Truck,
   },
-  {
-    id: "strategy",
-    title: "Business Strategy & Advisory",
-    description:
-      "We develop robust strategies for growth, sustainability and competitive advantage tailored to your goals.",
-    Icon: Briefcase,
-  },
+ 
   {
     id: "insurance",
     title: "Business Insurance & Risk",
@@ -82,13 +70,7 @@ const SERVICES: Service[] = [
       "Storage strategy, inventory optimisation and secure warehousing solutions designed for cost-efficiency and reliability.",
     Icon: Layers,
   },
-  {
-    id: "investigation",
-    title: "Global Investigation & Compliance",
-    description:
-      "Regulatory investigations, due diligence and compliance support to help you navigate legal and cross-border risks.",
-    Icon: Globe,
-  },
+
 ];
 
 export default function ServicesPage() {
